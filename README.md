@@ -5,7 +5,7 @@ This is a NetSurfP-2 parser. It parses the csv file that is generated at the end
 ```python3
 >>> from netsurfp import NETSURFPparser
 >>>
->>> for result in NETSURFPparser("netsurfp/viral_euk_elm_instances_50res_flank.csv"):
+>>> for result in NETSURFPparser("netsurfp_results.csv"):
 ...     print(result['id'][0])
 ...     print(result['rsa'])
 ...     break
@@ -17,7 +17,7 @@ ELMI002704|P13497|seqslice=66-171|elmslice=50-55
 
 To view all possible keys:
 ```python3
->>> for result in NETSURFPparser("netsurfp/viral_euk_elm_instances_50res_flank.csv"):
+>>> for result in NETSURFPparser("netsurfp_results.csv"):
 ...     print(result.keys())
 ...     break
 ...
